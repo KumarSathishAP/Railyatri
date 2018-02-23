@@ -10,9 +10,9 @@ import com.railyatri.qa.base.TestBase;
 import com.railyatri.qa.utils.TestUtil;
 
 public class BusSearchResultPage extends TestBase{
-	By viewSeatsBtn =By.xpath("//div[@id='search_attributes']/div[1]/div[1]//button");
-	By windowSeatckbox = By.xpath("//div[@class='seats_row']/div[1]/div[8]");
-	By nonwindowSeatckBox = By.xpath("//div[@class='seats_row']/div[2]/div[8]");
+	By viewSeatsBtn =By.xpath("(//div[@data-travels='Saheel Tours & Travels']//button)[1]");
+	By windowSeatckbox = By.xpath("//div[@data-travels='Saheel Tours & Travels']//div[@class='seats_row']/div[1]/div[8]");
+	By nonwindowSeatckBox = By.xpath("//div[@data-travels='Saheel Tours & Travels']//div[@class='seats_row']/div[2]/div[8]");
 	By boardingPointlstBox = By.id("bp");
 	By droppingPointlstBox = By.id("dp");
 	By continueBtn = By.xpath("//form[@id='booking_form']/button[text()='CONTINUE BOOKING']");

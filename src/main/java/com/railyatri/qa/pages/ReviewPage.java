@@ -3,7 +3,6 @@ package com.railyatri.qa.pages;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 
 import com.railyatri.qa.base.TestBase;
