@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="134683" started-at="2018-02-23T05:32:31Z" finished-at="2018-02-23T05:34:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="134683" started-at="2018-02-23T05:32:31Z" finished-at="2018-02-23T05:34:46Z">
+      <class name="com.railyatri.qa.testcases.FlowTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.railyatri.qa.testcases.FlowTest@3bd550]" name="setUp" is-config="true" duration-ms="52860" started-at="2018-02-23T11:02:35Z" finished-at="2018-02-23T11:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="loginPageTitleTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.railyatri.qa.testcases.FlowTest@3bd550]" name="loginPageTitleTest" duration-ms="74373" started-at="2018-02-23T11:03:28Z" data-provider="getPassengerTestData" finished-at="2018-02-23T11:04:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Egmore - 21:35]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[L.b. nagar - 33:0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vijay Kumar]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[42.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Sangeetha]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[37.0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Egmore 21:35]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: 2.0For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'System info: host: 'KUMARSATHISH', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_151'Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 2.0For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'System info: host: 'KUMARSATHISH', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_151'Driver info: driver.version: unknownat org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)at com.railyatri.qa.pages.BusSearchPage.chooseTravellers(BusSearchPage.java:42)at com.railyatri.qa.testcases.FlowTest.loginPageTitleTest(FlowTest.java:63)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.railyatri.qa.testcases.FlowTest@3bd550]" name="closeBrowser" is-config="true" duration-ms="3534" started-at="2018-02-23T11:04:43Z" finished-at="2018-02-23T11:04:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.railyatri.qa.testcases.FlowTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

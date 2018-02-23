@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RailYatri Test Automation Test Suite">
+	<test name="Book Ticket">
+		<classes>
+			<class name="com.railyatri.qa.testcases.FlowTest"></class>
+		</classes>
+	</test>
+</suite>
