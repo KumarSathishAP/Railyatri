@@ -1,10 +1,13 @@
 package com.railyatri.qa.pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.railyatri.qa.base.TestBase;
+import com.railyatri.qa.utils.TestUtil;
 
 public class BusSearchPage extends TestBase{
 	By sourceTxtbox = By.id("from-city");
@@ -44,11 +47,19 @@ public class BusSearchPage extends TestBase{
 	}
 	public BusSearchResultPage clickSearchBtn()
 	{
-		System.out.println("Test Working");
 		driver.findElement(searchBtn).click();
 		return new BusSearchResultPage();
 	}
 	
+	public BusSearchResultPage EnterBusSearchDetails(String source,String destination,String travellers) throws IOException
+	{
+		enterTxtinSource(source);
+		enterTxtinDestination(destination);
+		chooseTravellers(travellers);
+		TestUtil.takeScreenshotAt("SearchPage");
+		clickSearchBtn();
+		return new BusSearchResultPage();
+	}
 	
 	
 }
